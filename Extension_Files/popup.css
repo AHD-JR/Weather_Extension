@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+body, h2, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px; /* Minimum width to ensure content is visible */
+    height: 100vh; /* Full viewport height */
+    background-color: #f2f2f2; /* Background color */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+}
+
+h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Spacing between heading and input/button */
+    padding-top: 30px;
+    color: #333; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for a friendly effect */
+}
+
+/* Style the input and button container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Margin left and right */
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 1rem; /* Adjust the font size as needed */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    margin: 10px 0; /* Spacing between input and button */
+    text-align: center; /* Center-align the text */
+}
+
+#getWeatherButton {
+    padding: 10px 20px;
+    font-size: 1rem; /* Adjust the font size as needed */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Smooth color and transform transition */
+}
+
+#getWeatherButton:hover {
+    background-color: #0056b3; /* Hover color */
+    transform: scale(1.05); /* Scale up the button on hover for an animated effect */
+}
+
+/* Style the weather result container */
+#weatherResult {
+    margin-top: 20px; /* Spacing between button and result */
+    font-size: 1rem; /* Adjust the font size as needed */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Text color */
+}
